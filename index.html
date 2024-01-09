@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+       }
+       :root{
+            --clarito: #F9CB9C;
+            --medio: #F6B26B;
+            --oscuro: #B56D24;
+            --fondo: #93C47D;
+        }
+        body{
+            background-color: var(--fondo);
+        }
+        .container{
+            border: 1px solid black;
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(40, 1fr);
+        }
+        #fondo{
+            background-color: var(--fondo);
+            grid-column: 1 / 11;
+            grid-row: 1 / 28;
+        }
+        #nombre, #insta{
+            background-color: var(--fondo);
+            font-family: Arial, Helvetica, sans-serif;
+            color: #568341;
+        }
+        #un{
+            background-color: var(--medio);
+            grid-column: 7;
+            grid-row: 5;
+        }
+        #dos{
+            background-color: var(--medio);
+            grid-column: 6 / 9;
+            grid-row: 6;
+        }
+        #tres{
+            background-color: var(--medio);
+            grid-column: 5 / 10;
+            grid-row: 7;
+        }
+        #cuatro{
+            background-color: var(--medio);
+            grid-column: 4 / 11;
+            grid-row: 8;
+        }
+        #cinco{
+            background-color: var(--medio);
+            grid-column: 3 / 10;
+            grid-row: 9;
+        }
+        #seis{
+            background-color: var(--medio);
+            grid-column: 2 / 9;
+            grid-row: 10;
+        }
+        #siete{
+            background-color: var(--medio);
+            grid-column: 3 / 8;
+            grid-row: 11;
+        }
+        #ocho{
+            background-color: var(--medio);
+            grid-column: 4 / 7;
+            grid-row: 12;
+        }
+        #nueve{
+            background-color: var(--medio);
+            grid-column: 5;
+            grid-row: 13;
+        }
+        #diez{
+            background-color: var(--oscuro);
+            grid-column: 2;
+            grid-row: 11 / 31;
+        }
+        #once{
+            background-color: var(--oscuro);
+            grid-column: 3;
+            grid-row: 12 / 32;
+        }
+        #doce{
+            background-color: var(--oscuro);
+            grid-column: 4;
+            grid-row: 13 / 33;
+        }
+        #trece{
+            background-color: var(--clarito);
+            grid-column: 5;
+            grid-row: 14 / 34;
+        }
+        #catorce{
+            background-color: var(--clarito);
+            grid-column: 6;
+            grid-row: 13 / 33;
+        }
+        #quince{
+            background-color: var(--clarito);
+            grid-column: 7;
+            grid-row: 12 / 32;
+        }
+        #dieciseis{
+            background-color: var(--clarito);
+            grid-column: 8;
+            grid-row: 11 / 31;
+        }
+        #diecisiete{
+            background-color: var(--clarito);
+            grid-column: 9;
+            grid-row: 10 / 30;
+        }
+        #dieciocho{
+            background-color: var(--clarito);
+            grid-column: 10;
+            grid-row: 9 / 29;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="nombre">Matilde Calleja</div>
+        <div id="insta">@x.xxxxxxx.x</div>
+        <div id="fondo"></div>
+        <div id="un"></div>
+        <div id="dos"></div>
+        <div id="tres"></div>
+        <div id="cuatro"></div>
+        <div id="cinco"></div>
+        <div id="seis"></div>
+        <div id="siete"></div>
+        <div id="ocho"></div>
+        <div id="nueve"></div>
+
+        <div id="diez"></div>
+        <div id="once"></div>
+        <div id="doce"></div>
+
+        <div id="trece"></div>
+        <div id="catorce"></div>
+        <div id="quince"></div>
+        <div id="dieciseis"></div>
+        <div id="diecisiete"></div>
+        <div id="dieciocho"></div>
+    </div>
+</body>
+</html>
